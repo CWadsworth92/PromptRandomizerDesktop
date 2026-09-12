@@ -38,6 +38,16 @@
         <label class="setting-row"><span>Character LoRA mode</span><input id="loraToggle" type="checkbox" role="switch"></label>
         <label class="field"><span>LoRA trigger (optional)</span><input id="loraTrigger" placeholder="e.g. ohwx woman"></label>
         <p class="help">When enabled, subject presets describe role, count, pose, and framing without replacing character identity.</p>
+        <details class="bridge">
+          <summary>ComfyUI Connection</summary>
+          <label class="field"><span>Server URL</span><input id="comfyUrl" value="http://127.0.0.1:8188"></label>
+          <div class="bridge-grid">
+            <label class="field"><span>Prompt node ID</span><input id="comfyNode" placeholder="6"></label>
+            <label class="field"><span>Input name</span><input id="comfyInput" value="text"></label>
+          </div>
+          <div class="bridge-actions"><button id="importWorkflow">Load API Workflow</button><button id="testComfy">Test Connection</button><button id="queueComfy" class="primary">Queue in ComfyUI</button></div>
+          <p id="comfyStatus" class="help">Load a workflow exported in ComfyUI API format.</p>
+        </details>
       </div>
       <div id="categoryEditor"></div>
     </section>
