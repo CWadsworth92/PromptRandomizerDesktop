@@ -44,3 +44,17 @@ The Standard and Explicit views render through the same HTML and CSS. Switching 
 ## Explicit content boundary
 
 The Explicit generator is intended only for fictional consenting adults. Its starter subject pools are separated by participant count and use LoRA-friendly wording that describes staging without redefining character identity.
+
+## Built-in catalogs
+
+The app ships with the validated Standard recursive catalog (28 masters, 112 selectable subcategories, 560 presets) and the revised Explicit catalog with participant-count separation and LoRA-friendly subject prose. All newly introduced selectable categories start disabled.
+
+## Send a prompt to ComfyUI
+
+1. In ComfyUI, enable developer mode and export the workflow in **API format**.
+2. Open **ComfyUI Connection** in the desktop app.
+3. Keep the default server URL (`http://127.0.0.1:8188`) unless ComfyUI uses another address.
+4. Enter the node ID and input name for the destination text input (usually `text`).
+5. Load the API workflow, test the connection, and select **Queue in ComfyUI**.
+
+The bridge copies the workflow in memory, replaces only the configured prompt input, and submits it through ComfyUI's `/prompt` endpoint. The saved workflow file is never modified.
