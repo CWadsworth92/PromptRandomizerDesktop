@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Prompt Randomizer</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Prompt Randomizer</h1>
+      <p>Krea 2 prose compositor</p>
+    </div>
+    <div class="toolbar">
+      <label class="mode-switch">
+        <span>Standard</span>
+        <input id="modeToggle" type="checkbox" role="switch" aria-label="Explicit generator">
+        <i></i>
+        <span>Explicit</span>
+      </label>
+      <label>Seed <input id="seedInput" class="seed" inputmode="numeric"></label>
+      <button id="rerollAll" class="primary">Reroll All</button>
+      <button id="importConfig">Import JSON</button>
+      <button id="exportConfig">Export JSON</button>
+    </div>
+  </header>
+  <div class="notice" id="modeNotice"></div>
+  <main class="layout">
+    <aside class="panel sidebar">
+      <div class="panel-title"><span id="categoryTitle">Categories</span><button id="clearAll" class="danger quiet">Clear All</button></div>
+      <input id="search" class="search" placeholder="Search categories…">
+      <div id="categoryList" class="category-list"></div>
+    </aside>
+    <section class="panel editor">
+      <div class="panel-title"><span>Generator Settings</span></div>
+      <div class="settings">
+        <label class="setting-row"><span>Character LoRA mode</span><input id="loraToggle" type="checkbox" role="switch"></label>
+        <label class="field"><span>LoRA trigger (optional)</span><input id="loraTrigger" placeholder="e.g. ohwx woman"></label>
+        <p class="help">When enabled, subject presets describe role, count, pose, and framing without replacing character identity.</p>
+      </div>
+      <div id="categoryEditor"></div>
+    </section>
+    <section class="panel prompt-panel">
+      <div class="panel-title"><span>Live Prompt</span><div><button id="copyPrompt">Copy</button><button id="rerollPrompt" class="primary">Reroll</button></div></div>
+      <textarea id="livePrompt" readonly placeholder="Enable categories to compose a prompt."></textarea>
+      <div class="stats"><span>Mode <b id="modeStat"></b></span><span>Seed <b id="seedStat"></b></span><span>Selections <b id="selectionStat">0</b></span></div>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
