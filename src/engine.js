@@ -55,7 +55,10 @@ export function compose(modeState){
     const pool=(c.options||[]).filter(x=>x.enabled!==false);
     if(!c.enabled||!pool.length||rnd()*100>Number(c.chance??100))continue;
     if(c.behavior==="combine_all") selected.push(...pool.map(x=>x.text));
-    else selected.push(pool[Math.floor(rnd()*pool.length)].text);
+    else if(c.behavior==="choose_n") {
+      const shuffled=[...pool].sort(()=>rnd()-.5);
+      selected.push(...shuffled.slice(0,Math.max(1,Number(c.chooseCount||1))).map(x=>x.text));
+    } else selected.push(pool[Math.floor(rnd()*pool.length)].text);
   }
   return {prompt:selected.join(", ").replace(/\s+/g," ").trim(),count:selected.length};
 }
