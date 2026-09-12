@@ -1,0 +1,4686 @@
+{
+  "version": 6,
+  "prompt_profile": "krea2_natural",
+  "categories": [
+    {
+      "id": "identity_subject",
+      "name": "Identity / Subject",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "identity",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_identity_count_1",
+          "name": "1 Subject",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "identity",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_identity_count_1_cast",
+              "name": "Solo Adult Subject",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "identity",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_identity_solo_woman",
+                  "label": "Solo Adult Woman",
+                  "prompt": "one adult female subject",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_solo_man",
+                  "label": "Solo Adult Man",
+                  "prompt": "one adult male subject",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_1_cast_nonbinary",
+                  "label": "Solo Nonbinary Adult",
+                  "prompt": "one adult nonbinary subject",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_identity_count_2",
+          "name": "2 Subjects / Partners",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "identity",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_identity_count_2_cast",
+              "name": "Two Consenting Adults",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "identity",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_identity_pair_woman_man",
+                  "label": "Adult Woman and Man",
+                  "prompt": "the primary adult female subject with one adult male partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_pair_two_women",
+                  "label": "Two Adult Women",
+                  "prompt": "the primary adult female subject with one adult female partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_pair_two_men",
+                  "label": "Two Adult Men",
+                  "prompt": "the primary adult male subject with one adult male partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_2_cast_woman_nonbinary",
+                  "label": "Adult Woman and Nonbinary Partner",
+                  "prompt": "the primary adult female subject with one adult nonbinary partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_2_cast_man_nonbinary",
+                  "label": "Adult Man and Nonbinary Partner",
+                  "prompt": "the primary adult male subject with one adult nonbinary partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_2_cast_two_nonbinary",
+                  "label": "Two Nonbinary Adults",
+                  "prompt": "the primary adult nonbinary subject with one adult nonbinary partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_identity_count_3",
+          "name": "3 Subjects / Partners",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "identity",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_identity_count_3_cast",
+              "name": "Three Consenting Adults",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "identity",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_identity_trio_two_women_man",
+                  "label": "Two Women and One Man",
+                  "prompt": "the primary adult female subject with one adult female partner and one adult male partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_trio_woman_two_men",
+                  "label": "One Woman and Two Men",
+                  "prompt": "the primary adult female subject with two adult male partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_trio_three_women",
+                  "label": "Three Adult Women",
+                  "prompt": "the primary adult female subject with two adult female partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_trio_three_men",
+                  "label": "Three Adult Men",
+                  "prompt": "the primary adult male subject with two adult male partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_3_cast_mixed_nonbinary",
+                  "label": "Mixed-Gender Adult Trio",
+                  "prompt": "the primary adult subject with two adult partners of different genders",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_3_cast_two_men_nonbinary",
+                  "label": "Two Men and Nonbinary Partner",
+                  "prompt": "the primary adult male subject with one adult male partner and one adult nonbinary partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_count_3_cast_two_women_nonbinary",
+                  "label": "Two Women and Nonbinary Partner",
+                  "prompt": "the primary adult female subject with one adult female partner and one adult nonbinary partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_identity_count_4_plus",
+          "name": "4+ Subjects / Partners",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "identity",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_identity_count_4_plus_cast",
+              "name": "Adult Group",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "identity",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_identity_group_four",
+                  "label": "Four Consenting Adults",
+                  "prompt": "the primary adult subject with three adult partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_group_five",
+                  "label": "Five Consenting Adults",
+                  "prompt": "the primary adult subject with four adult partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_identity_group_crowd",
+                  "label": "Adult Group Scene",
+                  "prompt": "the primary adult subject with a group of adult partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "body_physique",
+      "name": "Body / Physique",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "body_physique",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_body_physique_explicit_anatomy",
+          "name": "Explicit Anatomy",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "body_physique",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_body_physique_explicit_anatomy_01",
+              "label": "Visible Breasts",
+              "prompt": "bare breasts fully visible with natural anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_02",
+              "label": "Visible Vulva",
+              "prompt": "vulva clearly visible with anatomically coherent detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_03",
+              "label": "Visible Penis",
+              "prompt": "penis clearly visible with anatomically coherent detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_04",
+              "label": "Full Frontal Nudity",
+              "prompt": "fully nude body shown from head to toe with explicit frontal anatomy visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_05",
+              "label": "Rear Nudity",
+              "prompt": "fully nude rear view with buttocks clearly visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_06",
+              "label": "Aroused Anatomy",
+              "prompt": "visible adult sexual arousal rendered with anatomically coherent detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_breasts_natural",
+              "label": "Natural Breast Detail",
+              "prompt": "bare breasts with natural weight, soft tissue, and anatomically coherent nipples",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_breasts_large",
+              "label": "Full Breast Detail",
+              "prompt": "full bare breasts with realistic weight and natural skin texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_vulva_natural",
+              "label": "Natural Vulva Detail",
+              "prompt": "exposed vulva with natural proportions and anatomically coherent detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_penis_erect",
+              "label": "Erect Penis Detail",
+              "prompt": "fully erect penis with anatomically coherent proportions and natural skin texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_buttocks_spread",
+              "label": "Spread Buttocks",
+              "prompt": "buttocks held apart with explicit rear anatomy clearly visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_explicit_anatomy_wet_arousal",
+              "label": "Visible Wet Arousal",
+              "prompt": "visible wet arousal rendered with restrained realistic detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_body_physique_body_presentation",
+          "name": "Body Presentation",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "body_physique",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_body_physique_body_presentation_01",
+              "label": "Natural Nude Body",
+              "prompt": "natural unretouched nude proportions and realistic skin texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_02",
+              "label": "Curvy Nude Body",
+              "prompt": "soft curvy nude proportions with a full bust, defined waist, and rounded hips",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_03",
+              "label": "Slim Nude Body",
+              "prompt": "slim nude proportions with long limbs and a natural waist",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_04",
+              "label": "Athletic Nude Body",
+              "prompt": "athletic nude proportions with subtle muscle definition",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_05",
+              "label": "Soft Plus Size Body",
+              "prompt": "soft plus-size nude proportions with natural folds and realistic weight distribution",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_soft_natural",
+              "label": "Soft Natural Body",
+              "prompt": "soft natural nude proportions with subtle curves and realistic weight distribution",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_mature_curvy",
+              "label": "Mature Curvy Body",
+              "prompt": "mature curvy nude proportions with soft fullness and realistic skin texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_tall_slim",
+              "label": "Tall Slim Body",
+              "prompt": "tall slim nude proportions with long legs and a natural unexaggerated frame",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_body_physique_body_presentation_compact_curvy",
+              "label": "Compact Curvy Body",
+              "prompt": "shorter curvy nude proportions with balanced anatomy and natural softness",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "hair",
+      "name": "Hair",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "hair",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "hair_color",
+      "name": "Hair Color",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "hair_color",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "eye_color",
+      "name": "Eye Color",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "eye_color",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "face_skin",
+      "name": "Face / Skin",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "face",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "makeup",
+      "name": "Makeup",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "makeup",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "nails",
+      "name": "Nails / Nail Styling",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "nails",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "tattoos_body_art",
+      "name": "Tattoos / Body Art",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "tattoos",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "outfit",
+      "name": "Outfit",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "outfit",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_outfit_explicit_nudity",
+          "name": "Explicit Nudity",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "outfit",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_outfit_explicit_nudity_01",
+              "label": "Completely Nude",
+              "prompt": "completely nude with no clothing obscuring the body or genitals",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_02",
+              "label": "Topless",
+              "prompt": "topless with breasts uncovered while the lower body remains dressed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_03",
+              "label": "Bottomless",
+              "prompt": "bare from the waist down with intimate anatomy unobstructed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_04",
+              "label": "Open Robe",
+              "prompt": "a loose robe hanging open to expose the nude body",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_05",
+              "label": "Parted Shirt",
+              "prompt": "an oversized shirt worn open with the nude torso and lower body visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_robe_waist",
+              "label": "Robe Pooled at Waist",
+              "prompt": "a loose robe pooled around the waist, leaving the torso and intimate anatomy exposed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_dress_lifted",
+              "label": "Dress Lifted",
+              "prompt": "a short dress lifted above the hips with the lower body fully exposed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_skirt_no_panties",
+              "label": "Skirt Without Underwear",
+              "prompt": "a raised skirt worn without underwear, leaving intimate anatomy unobstructed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_unbuttoned_jeans",
+              "label": "Open Jeans",
+              "prompt": "unbuttoned jeans lowered below the hips with the nude pelvis exposed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_explicit_nudity_wet_transparent",
+              "label": "Wet Transparent Clothing",
+              "prompt": "soaked transparent clothing clinging to the nude body beneath",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_outfit_erotic_lingerie",
+          "name": "Erotic Lingerie",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "outfit",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_outfit_erotic_lingerie_01",
+              "label": "Sheer Lingerie",
+              "prompt": "transparent lace lingerie revealing the body beneath",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_02",
+              "label": "Crotchless Lingerie",
+              "prompt": "crotchless lingerie with open intimate access",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_03",
+              "label": "Open Cup Set",
+              "prompt": "an open-cup bra with matching garter belt and stockings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_04",
+              "label": "Micro Bikini",
+              "prompt": "an extremely minimal string bikini with narrow coverage",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_05",
+              "label": "Body Harness",
+              "prompt": "a fitted leather body harness worn over bare skin",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_06",
+              "label": "Latex Catsuit",
+              "prompt": "a glossy skin-tight latex catsuit with strategic openings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_lace_teddy",
+              "label": "Open Lace Teddy",
+              "prompt": "a sheer lace teddy with open cups and an open crotch",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_quarter_cup",
+              "label": "Quarter-Cup Set",
+              "prompt": "a quarter-cup bra exposing the breasts with matching garters and thong",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_pearl_thong",
+              "label": "Pearl Thong",
+              "prompt": "a minimal pearl thong with a delicate chain centered between the legs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_suspender_belt",
+              "label": "Suspender Belt Set",
+              "prompt": "a structured suspender belt with stockings and no underwear",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_transparent_bodysuit",
+              "label": "Transparent Bodysuit",
+              "prompt": "a transparent mesh bodysuit revealing the entire body beneath",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_erotic_lingerie_ribbon_lingerie",
+              "label": "Ribbon Lingerie",
+              "prompt": "strategically wrapped satin ribbons leaving breasts and intimate anatomy accessible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_outfit_fetish_wear",
+          "name": "Fetish Wear",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "outfit",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_outfit_fetish_wear_01",
+              "label": "Leather Domme",
+              "prompt": "a structured leather corset, thigh-high boots, and elbow-length gloves",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_02",
+              "label": "Submissive Harness",
+              "prompt": "a minimal restraint harness with exposed breasts and buttocks",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_03",
+              "label": "Maid Fetish Set",
+              "prompt": "a revealing adult maid costume with open-cup bodice and thigh-high stockings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_04",
+              "label": "Nurse Fetish Set",
+              "prompt": "a revealing adult nurse costume with garters and an unfastened front",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_05",
+              "label": "Schoolgirl-Inspired Adult Costume",
+              "prompt": "an adult roleplay costume with a cropped blouse, micro pleated skirt, and thigh-high stockings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_06",
+              "label": "Fishnet Body Stocking",
+              "prompt": "a sheer fishnet bodystocking worn over the nude body",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_latex_corset",
+              "label": "Latex Corset Set",
+              "prompt": "a tight latex corset with matching opera gloves and thigh-high boots",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_vinyl_microdress",
+              "label": "Vinyl Microdress",
+              "prompt": "a glossy vinyl microdress with a front zipper opened to the waist",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_rope_only",
+              "label": "Rope-Only Harness",
+              "prompt": "decorative bondage rope worn as the only body covering",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_leather_cage",
+              "label": "Leather Cage Harness",
+              "prompt": "a geometric leather cage harness framing the bare torso and hips",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_medical_fetish",
+              "label": "Medical Fetish Outfit",
+              "prompt": "a fitted adult medical roleplay outfit with an open front and thigh-high stockings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_outfit_fetish_wear_office_roleplay",
+              "label": "Executive Roleplay Outfit",
+              "prompt": "an adult office roleplay look with an open blouse, pencil skirt raised above the hips, and stockings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "accessories",
+      "name": "Accessories",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "accessory",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_accessories_restraints_and_collars",
+          "name": "Restraints and Collars",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "accessory",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_accessories_restraints_and_collars_01",
+              "label": "Leather Collar",
+              "prompt": "a snug black leather collar with a polished metal O-ring",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_02",
+              "label": "Leash",
+              "prompt": "a leather leash clipped securely to the collar",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_03",
+              "label": "Wrist Cuffs",
+              "prompt": "padded leather cuffs secured around both wrists",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_04",
+              "label": "Ankle Cuffs",
+              "prompt": "matching padded cuffs secured around both ankles",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_05",
+              "label": "Rope Harness",
+              "prompt": "decorative bondage rope arranged in a symmetrical body harness",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_06",
+              "label": "Spread Bar",
+              "prompt": "a padded spreader bar attached safely between the ankles",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_handcuffs",
+              "label": "Metal Handcuffs",
+              "prompt": "polished metal handcuffs secured around both wrists",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_silk_ties",
+              "label": "Silk Wrist Ties",
+              "prompt": "wide silk ties wrapped securely around the wrists",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_thigh_cuffs",
+              "label": "Thigh Cuffs",
+              "prompt": "matching leather cuffs fitted around the upper thighs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_chest_harness",
+              "label": "Chest Restraint Harness",
+              "prompt": "a structured leather chest harness with multiple polished attachment rings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_posture_collar",
+              "label": "Posture Collar",
+              "prompt": "a tall padded posture collar holding the neck upright",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_restraints_and_collars_rope_cuffs",
+              "label": "Rope Cuffs",
+              "prompt": "soft bondage rope tied into secure decorative wrist and ankle cuffs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_accessories_erotic_accessories",
+          "name": "Erotic Accessories",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "accessory",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_accessories_erotic_accessories_01",
+              "label": "Garter Stockings",
+              "prompt": "black thigh-high stockings clipped to a garter belt",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_02",
+              "label": "Nipple Clamps",
+              "prompt": "adjustable nipple clamps connected by a delicate chain",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_03",
+              "label": "Blindfold",
+              "prompt": "a soft satin blindfold covering the eyes",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_04",
+              "label": "Ball Gag",
+              "prompt": "a fitted ball gag secured with a leather strap",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_05",
+              "label": "Choker Chain",
+              "prompt": "a slim metal chain attached to a fitted choker",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_06",
+              "label": "Body Jewelry",
+              "prompt": "delicate intimate body jewelry catching the light",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_nipple_piercings",
+              "label": "Nipple Piercings",
+              "prompt": "polished nipple piercings clearly visible on the bare chest",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_intimate_piercing",
+              "label": "Intimate Piercing",
+              "prompt": "delicate intimate piercing jewelry visible with anatomically coherent placement",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_waist_chain",
+              "label": "Waist Chain",
+              "prompt": "a fine body chain circling the waist and descending toward the hips",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_garter_chains",
+              "label": "Chain Garters",
+              "prompt": "delicate chain garters draped around both upper thighs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_accessories_erotic_accessories_mask",
+              "label": "Fetish Mask",
+              "prompt": "a fitted leather fetish mask leaving the eyes and mouth visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "props_objects",
+      "name": "Props / Objects",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "props",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_props_objects_adult_toys",
+          "name": "Adult Toys",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "props",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_props_objects_adult_toys_01",
+              "label": "Vibrator",
+              "prompt": "a modern silicone vibrator held visibly in one hand",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_02",
+              "label": "Dildo",
+              "prompt": "a realistic adult dildo positioned as an obvious scene prop",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_03",
+              "label": "Strap-On",
+              "prompt": "an adult strap-on harness clearly visible and ready for use",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_04",
+              "label": "Anal Plug",
+              "prompt": "a jeweled anal plug visibly in place",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_05",
+              "label": "Wand Massager",
+              "prompt": "a large wand massager pressed against the body",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_06",
+              "label": "Bondage Paddle",
+              "prompt": "a leather impact paddle held ready in one hand",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_glass_dildo",
+              "label": "Glass Dildo",
+              "prompt": "a smooth transparent glass dildo held as an obvious adult toy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_dual_vibrator",
+              "label": "Dual-Stimulation Vibrator",
+              "prompt": "a curved dual-stimulation vibrator positioned for simultaneous internal and external use",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_suction_toy",
+              "label": "Suction Toy",
+              "prompt": "a compact suction toy held directly against exposed genitals",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_beads",
+              "label": "Anal Beads",
+              "prompt": "a graduated strand of anal beads visibly in use",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_cock_ring",
+              "label": "Cock Ring",
+              "prompt": "a fitted cock ring visibly secured around an erect penis",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_masturbator",
+              "label": "Male Masturbator",
+              "prompt": "a textured male masturbator positioned around an erect penis",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_remote_vibe",
+              "label": "Remote Vibrator",
+              "prompt": "a small wearable vibrator with its wireless controller visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_adult_toys_strapless_strapon",
+              "label": "Strapless Strap-On",
+              "prompt": "a strapless double-ended dildo positioned for partner use",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_props_objects_bondage_furniture",
+          "name": "Bondage Furniture",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "props",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_props_objects_bondage_furniture_01",
+              "label": "St Andrews Cross",
+              "prompt": "a padded St. Andrew's cross with secure wrist and ankle restraints",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_02",
+              "label": "Restraint Bench",
+              "prompt": "a leather bondage bench with padded supports and attachment points",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_03",
+              "label": "Four Poster Bed",
+              "prompt": "a sturdy four-poster bed prepared with silk ties and padded cuffs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_04",
+              "label": "Suspension Frame",
+              "prompt": "a professional suspension frame with safely arranged rope supports",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_05",
+              "label": "Padded Table",
+              "prompt": "a waist-high padded table suitable for an intimate scene",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_sex_swing",
+              "label": "Sex Swing",
+              "prompt": "a reinforced sex swing with padded supports and adjustable straps",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_pillory",
+              "label": "Padded Pillory",
+              "prompt": "a padded pillory securing the wrists and neck in a controlled position",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_bondage_chair",
+              "label": "Bondage Chair",
+              "prompt": "a sturdy bondage chair with padded arm, waist, and ankle restraints",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_kneeling_bench",
+              "label": "Kneeling Bench",
+              "prompt": "a low padded kneeling bench with stable restraint points",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_props_objects_bondage_furniture_wall_shackles",
+              "label": "Wall Shackles",
+              "prompt": "padded wall-mounted wrist restraints arranged above shoulder height",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "pose",
+      "name": "Pose",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "pose",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_pose_count_1",
+          "name": "1 Subject / Solo Poses",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "pose",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_pose_explicit_solo_poses",
+              "name": "Explicit Solo Poses",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "pose",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_pose_explicit_solo_poses_01",
+                  "label": "Open Leg Recline",
+                  "prompt": "reclining with legs spread wide and explicit anatomy unobstructed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_02",
+                  "label": "All Fours Rear View",
+                  "prompt": "posed on hands and knees with the full body and rear anatomy visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_03",
+                  "label": "Standing Full Frontal",
+                  "prompt": "standing upright in full-frontal nudity with head-to-toe framing",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_04",
+                  "label": "Kneeling Presentation",
+                  "prompt": "kneeling with thighs apart, torso upright, and the entire pose visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_05",
+                  "label": "Bent Over",
+                  "prompt": "bent forward with legs apart and the camera showing the complete pose",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_06",
+                  "label": "Raised Legs",
+                  "prompt": "lying back with both legs raised and parted, keeping the entire body in frame",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_standing_leg_raised",
+                  "label": "Standing Leg Raised",
+                  "prompt": "standing with one leg raised onto a support, exposing intimate anatomy while keeping the full body visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_seated_edge",
+                  "label": "Seated Edge Presentation",
+                  "prompt": "seated at the edge of a bed with knees wide apart and feet planted",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_squatting_open",
+                  "label": "Open Squat",
+                  "prompt": "holding a balanced deep squat with knees spread and explicit anatomy visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_mirror_recline",
+                  "label": "Mirror Recline",
+                  "prompt": "reclining before a full-length mirror with legs parted and the reflection showing the complete body",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_side_recline",
+                  "label": "Side Recline",
+                  "prompt": "reclining on one side with the upper leg lifted to reveal explicit anatomy",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_explicit_solo_poses_arched_back",
+                  "label": "Arched Back Presentation",
+                  "prompt": "lying back with hips raised, spine naturally arched, and legs apart",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            },
+            {
+              "id": "explicit_pose_bondage_poses",
+              "name": "Bondage Poses",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "pose",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_pose_bondage_poses_01",
+                  "label": "Wrists Overhead",
+                  "prompt": "wrists restrained overhead while standing with the full body extended",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_02",
+                  "label": "Spread Eagle",
+                  "prompt": "restrained spread-eagle with arms and legs visibly secured",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_03",
+                  "label": "Kneeling Restrained",
+                  "prompt": "kneeling with wrists cuffed behind the back and posture upright",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_04",
+                  "label": "Bent Over Bench",
+                  "prompt": "bent over a padded bench with wrists and ankles safely restrained",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_05",
+                  "label": "Cross Restraint",
+                  "prompt": "secured to a St. Andrew's cross with limbs spread and the full body visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_hogtie",
+                  "label": "Padded Hogtie",
+                  "prompt": "lying face down with wrists and ankles joined by padded restraints",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_chair_bound",
+                  "label": "Chair Bound",
+                  "prompt": "seated upright in a bondage chair with wrists, waist, and ankles secured",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_suspension_seated",
+                  "label": "Supported Rope Suspension",
+                  "prompt": "held in a low supported rope suspension with balanced weight and visible safety lines",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_pillory_bent",
+                  "label": "Bent at Pillory",
+                  "prompt": "secured in a padded pillory with the torso bent forward and legs apart",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_bondage_poses_kneeling_leash",
+                  "label": "Collared Kneel",
+                  "prompt": "kneeling upright with hands behind the back and a leash extending upward",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_pose_count_2_plus",
+          "name": "2+ Subjects / Partner Poses",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "pose",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_pose_partner_positions",
+              "name": "Partner Positions",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "pose",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_pose_partner_positions_01",
+                  "label": "Face to Face Embrace",
+                  "prompt": "bodies pressed together face to face with both partners visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_02",
+                  "label": "Straddling Partner",
+                  "prompt": "straddling the partner's hips with both bodies clearly framed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_03",
+                  "label": "From Behind Position",
+                  "prompt": "positioned on hands and knees while the partner kneels behind, both bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_04",
+                  "label": "Standing Against Wall",
+                  "prompt": "pressed against a wall while the partner stands close behind",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_05",
+                  "label": "Side by Side Recline",
+                  "prompt": "reclining side by side with intertwined legs and unobstructed bodies",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_06",
+                  "label": "Seated Lap Position",
+                  "prompt": "seated astride the partner's lap with both torsos and lower bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_reverse_cowgirl",
+                  "label": "Reverse Straddle",
+                  "prompt": "straddling the reclining partner while facing away, with both bodies clearly visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_spooning",
+                  "label": "Spooning Position",
+                  "prompt": "lying closely on one side with the partner positioned behind and both bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_lotus",
+                  "label": "Seated Lotus Position",
+                  "prompt": "seated face to face with legs wrapped around the partner's waist",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_edge_bed",
+                  "label": "Edge of Bed Position",
+                  "prompt": "lying at the edge of the bed while the standing partner remains fully visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_standing_carry",
+                  "label": "Supported Standing Position",
+                  "prompt": "lifted securely against the standing partner with legs wrapped around the hips",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_tabletop",
+                  "label": "Tabletop Position",
+                  "prompt": "reclining on a padded table while the partner stands between parted legs",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_prone_rear",
+                  "label": "Prone Rear Position",
+                  "prompt": "lying face down with hips raised slightly while the partner kneels behind",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_pose_partner_positions_kneeling_face_to_face",
+                  "label": "Kneeling Face to Face",
+                  "prompt": "both partners kneeling face to face with torsos close and lower bodies unobstructed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "expression",
+      "name": "Expression",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "expression",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_expression_explicit_expressions",
+          "name": "Explicit Expressions",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "expression",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_expression_explicit_expressions_01",
+              "label": "Intense Arousal",
+              "prompt": "an intensely aroused expression with parted lips and focused eyes",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_02",
+              "label": "Ecstatic Pleasure",
+              "prompt": "an ecstatic expression with eyes partly closed and mouth open",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_03",
+              "label": "Playful Invitation",
+              "prompt": "a playful inviting expression with direct eye contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_04",
+              "label": "Dominant Focus",
+              "prompt": "a controlled dominant stare and self-assured half-smile",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_05",
+              "label": "Submissive Anticipation",
+              "prompt": "an eager submissive expression with flushed cheeks",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_06",
+              "label": "Overwhelmed Pleasure",
+              "prompt": "an overwhelmed expression of pleasure with tense brows and parted lips",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_breathless",
+              "label": "Breathless Arousal",
+              "prompt": "a breathless aroused expression with flushed cheeks and parted lips",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_teasing",
+              "label": "Teasing Confidence",
+              "prompt": "a teasing confident expression with deliberate eye contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_focused_pleasure",
+              "label": "Focused Pleasure",
+              "prompt": "a concentrated expression of pleasure with tense brows and controlled breathing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_dominant_smile",
+              "label": "Dominant Smile",
+              "prompt": "a composed dominant smile with steady direct eye contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_submissive_gaze",
+              "label": "Submissive Gaze",
+              "prompt": "an attentive submissive gaze directed toward the partner",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_expression_explicit_expressions_post_climax",
+              "label": "Post-Climax Release",
+              "prompt": "a relaxed post-climax expression with softened features and uneven breathing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "action_interaction",
+      "name": "Action / Interaction",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "interaction",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_action_count_1",
+          "name": "1 Subject / Solo Actions",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "interaction",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_action_interaction_solo_stimulation",
+              "name": "Solo Stimulation",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_01",
+                  "label": "Hand Stimulation",
+                  "prompt": "touching and stimulating exposed genitals with one hand",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_02",
+                  "label": "Vibrator Stimulation",
+                  "prompt": "using a vibrator directly against exposed genitals",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_03",
+                  "label": "Dildo Penetration",
+                  "prompt": "using an adult dildo for clearly visible vaginal penetration",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_04",
+                  "label": "Anal Toy Play",
+                  "prompt": "using a lubricated adult toy for clearly visible anal play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_05",
+                  "label": "Breast Play",
+                  "prompt": "squeezing and teasing bare breasts with both hands",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_06",
+                  "label": "Mirror Masturbation",
+                  "prompt": "masturbating in front of a mirror with the full-body reflection visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_standing_touch",
+                  "label": "Standing Manual Stimulation",
+                  "prompt": "standing with legs apart while manually stimulating exposed genitals",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_shower_touch",
+                  "label": "Shower Masturbation",
+                  "prompt": "masturbating beneath running shower water with the complete body visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_wand_bed",
+                  "label": "Wand on Bed",
+                  "prompt": "reclining on a bed while pressing a wand massager against exposed genitals",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_suction_recline",
+                  "label": "Suction Toy Recline",
+                  "prompt": "reclining with legs spread while using a suction toy directly on exposed genitals",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_glass_toy",
+                  "label": "Glass Toy Penetration",
+                  "prompt": "using a glass dildo for clearly visible vaginal penetration",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_double_toy",
+                  "label": "Dual-Toy Stimulation",
+                  "prompt": "using separate adult toys for simultaneous vaginal and anal stimulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_standing_dildo",
+                  "label": "Standing Dildo Play",
+                  "prompt": "standing with one foot raised while using a dildo for visible vaginal penetration",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_solo_stimulation_breast_nipple",
+                  "label": "Nipple Stimulation",
+                  "prompt": "pinching and stimulating both nipples while the nude body remains fully framed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_action_count_2",
+          "name": "2 Subjects / Partner Actions",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "interaction",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_action_interaction_oral_sex",
+              "name": "Oral Sex",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_oral_sex_01",
+                  "label": "Fellatio",
+                  "prompt": "performing explicit oral sex on an adult male partner with both adults visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_02",
+                  "label": "Cunnilingus",
+                  "prompt": "performing explicit oral sex on an adult female partner with both adults visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_03",
+                  "label": "Sixty Nine",
+                  "prompt": "engaging in a mutual sixty-nine position with both adult bodies fully visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_04",
+                  "label": "Oral From Kneeling",
+                  "prompt": "kneeling between the standing partner's legs while performing oral sex",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_05",
+                  "label": "Face Sitting",
+                  "prompt": "sitting over the reclining partner's face during consensual oral sex",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_standing_fellatio",
+                  "label": "Standing Fellatio",
+                  "prompt": "performing explicit oral sex on a standing adult male partner while kneeling",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_deep_oral",
+                  "label": "Deep Oral Sex",
+                  "prompt": "performing deep consensual oral sex with both partners' body positions clearly visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_oral_edge_bed",
+                  "label": "Oral at Bed Edge",
+                  "prompt": "performing oral sex between the reclining partner's legs at the edge of a bed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_mutual_side",
+                  "label": "Side-Lying Sixty-Nine",
+                  "prompt": "engaging in mutual oral sex while lying on their sides with both bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_kneeling_cunnilingus",
+                  "label": "Kneeling Cunnilingus",
+                  "prompt": "kneeling between an adult female partner's spread legs while performing cunnilingus",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_oral_sex_standing_cunnilingus",
+                  "label": "Standing Oral Support",
+                  "prompt": "supporting one raised leg while receiving consensual oral sex from the kneeling partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            },
+            {
+              "id": "explicit_action_interaction_penetrative_sex",
+              "name": "Penetrative Sex",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_01",
+                  "label": "Vaginal Missionary",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse in a face-to-face missionary position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_02",
+                  "label": "Vaginal Cowgirl",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse while straddling the reclining partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_03",
+                  "label": "Vaginal From Behind",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse from behind",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_04",
+                  "label": "Standing Vaginal Sex",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse while standing against a wall",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_05",
+                  "label": "Anal From Behind",
+                  "prompt": "engaging in clearly visible consensual anal intercourse from behind",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_06",
+                  "label": "Anal Cowgirl",
+                  "prompt": "engaging in clearly visible consensual anal intercourse while straddling the reclining partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_reverse_cowgirl_vaginal",
+                  "label": "Reverse Cowgirl Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse in a reverse cowgirl position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_spooning_vaginal",
+                  "label": "Spooning Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse in a side-lying spooning position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_lotus_vaginal",
+                  "label": "Lotus Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse while seated face to face",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_edge_bed_vaginal",
+                  "label": "Bed-Edge Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse at the edge of a bed",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_table_vaginal",
+                  "label": "Tabletop Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse on a padded table",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_prone_vaginal",
+                  "label": "Prone Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal intercourse from behind while lying prone",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_standing_anal",
+                  "label": "Standing Anal",
+                  "prompt": "engaging in clearly visible consensual anal intercourse while standing against a wall",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_spooning_anal",
+                  "label": "Spooning Anal",
+                  "prompt": "engaging in clearly visible consensual anal intercourse in a side-lying spooning position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_missionary_anal",
+                  "label": "Missionary Anal",
+                  "prompt": "engaging in clearly visible consensual anal intercourse in a face-to-face reclining position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_strapon_vaginal",
+                  "label": "Strap-On Vaginal",
+                  "prompt": "engaging in clearly visible consensual vaginal penetration with a strap-on",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_strapon_anal",
+                  "label": "Strap-On Anal",
+                  "prompt": "engaging in clearly visible consensual anal penetration with a strap-on",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_penetrative_sex_double_ended",
+                  "label": "Double-Ended Toy",
+                  "prompt": "two adult partners using a double-ended dildo simultaneously with coherent positioning",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            },
+            {
+              "id": "explicit_action_interaction_manual_partner_play",
+              "name": "Manual Partner Play",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_01",
+                  "label": "Mutual Touching",
+                  "prompt": "touching each other's exposed genitals with both adult bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_02",
+                  "label": "Fingering",
+                  "prompt": "using fingers for clearly visible consensual vaginal stimulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_03",
+                  "label": "Handjob",
+                  "prompt": "giving an adult male partner explicit manual stimulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_04",
+                  "label": "Double Stimulation",
+                  "prompt": "combining genital stimulation with breast or nipple play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_05",
+                  "label": "Edging",
+                  "prompt": "deliberately slowing stimulation at the edge of climax while maintaining close eye contact",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_mutual_masturbation",
+                  "label": "Mutual Masturbation",
+                  "prompt": "masturbating side by side while watching and touching each other",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_standing_fingering",
+                  "label": "Standing Fingering",
+                  "prompt": "using fingers for visible vaginal stimulation while supporting the partner against a wall",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_rear_fingering",
+                  "label": "Fingering From Behind",
+                  "prompt": "using fingers for visible vaginal stimulation while positioned closely behind the partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_two_hand_handjob",
+                  "label": "Two-Handed Handjob",
+                  "prompt": "using both hands for explicit manual stimulation of an adult male partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_breast_handjob",
+                  "label": "Breast and Hand Stimulation",
+                  "prompt": "combining breast contact with explicit manual stimulation of an adult male partner",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_anal_fingering",
+                  "label": "Anal Fingering",
+                  "prompt": "using lubricated fingers for clearly visible consensual anal stimulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_toy_partner",
+                  "label": "Partner-Controlled Toy",
+                  "prompt": "controlling an adult toy against the partner's exposed genitals",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_manual_partner_play_simultaneous_manual",
+                  "label": "Simultaneous Manual Play",
+                  "prompt": "both partners manually stimulating each other's exposed genitals at the same time",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            },
+            {
+              "id": "explicit_action_interaction_consensual_bdsm",
+              "name": "Consensual BDSM",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_01",
+                  "label": "Dominant Restraint",
+                  "prompt": "a dominant partner controlling the restrained partner with deliberate consensual handling",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_02",
+                  "label": "Spanking",
+                  "prompt": "administering a visible consensual spanking with an open hand",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_03",
+                  "label": "Paddle Impact",
+                  "prompt": "using a leather paddle for controlled consensual impact play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_04",
+                  "label": "Leash Control",
+                  "prompt": "guiding the collared partner by a leash during consensual power exchange",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_05",
+                  "label": "Wax Play",
+                  "prompt": "dripping body-safe warm wax across the torso during consensual sensation play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_06",
+                  "label": "Rope Bondage",
+                  "prompt": "tightening decorative bondage rope while monitoring comfort and circulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_flogging",
+                  "label": "Flogging",
+                  "prompt": "using a soft multi-tail flogger for controlled consensual impact across the buttocks",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_cane",
+                  "label": "Cane Play",
+                  "prompt": "using a flexible cane for measured consensual impact play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_crop",
+                  "label": "Riding Crop Play",
+                  "prompt": "tracing and tapping exposed skin with a riding crop during consensual power exchange",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_pinwheel",
+                  "label": "Sensation Pinwheel",
+                  "prompt": "rolling a sterile sensation pinwheel lightly across exposed skin",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_ice",
+                  "label": "Ice Play",
+                  "prompt": "tracing melting ice across the restrained partner's torso and inner thighs",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_clamps_control",
+                  "label": "Clamp Control",
+                  "prompt": "adjusting nipple clamps while monitoring the restrained partner's response",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_collar_kneel",
+                  "label": "Collar and Kneel",
+                  "prompt": "directing the collared partner into an attentive kneeling position",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_blindfold_tease",
+                  "label": "Blindfolded Teasing",
+                  "prompt": "teasing the blindfolded partner with alternating touch and anticipation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_orgasm_control",
+                  "label": "Orgasm Control",
+                  "prompt": "controlling stimulation and pauses during an explicitly consensual orgasm-control scene",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_consensual_bdsm_aftercare",
+                  "label": "BDSM Aftercare",
+                  "prompt": "providing close physical comfort, water, and reassurance immediately after intense consensual play",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_action_count_3_plus",
+          "name": "3+ Subjects / Group Actions",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "interaction",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_action_interaction_multi_partner",
+              "name": "Multi Partner",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "interaction",
+              "claims": [],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_action_interaction_multi_partner_01",
+                  "label": "Threesome Touching",
+                  "prompt": "three consenting adults engaged in explicit mutual touching with every body clearly visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_02",
+                  "label": "Threesome Oral",
+                  "prompt": "three consenting adults engaged in coordinated oral sex with coherent body placement",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_03",
+                  "label": "Double Penetration",
+                  "prompt": "three consenting adults engaged in clearly visible double penetration with anatomically coherent positioning",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_04",
+                  "label": "Group Sex",
+                  "prompt": "multiple consenting adults engaged in explicit group sex with distinct, non-duplicated bodies",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_trio_mutual",
+                  "label": "Trio Mutual Masturbation",
+                  "prompt": "three consenting adults engaged in simultaneous mutual masturbation with distinct bodies",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_trio_oral_chain",
+                  "label": "Trio Oral Chain",
+                  "prompt": "three consenting adults arranged in a coherent chain of mutual oral sex",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_trio_center_focus",
+                  "label": "Trio Center Partner",
+                  "prompt": "one adult partner receiving coordinated oral and manual stimulation from two adult partners",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_trio_strapon",
+                  "label": "Trio Strap-On Play",
+                  "prompt": "three consenting adults engaged in coordinated strap-on penetration and manual stimulation",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_four_group",
+                  "label": "Four-Adult Group Sex",
+                  "prompt": "four consenting adults engaged in explicit group sex with clearly separated bodies and readable contact",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_group_oral",
+                  "label": "Group Oral Sex",
+                  "prompt": "multiple consenting adults engaged in coordinated oral sex with unobstructed body placement",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_group_bondage",
+                  "label": "Group BDSM Scene",
+                  "prompt": "multiple consenting adults participating in a structured BDSM scene with one restrained partner and attentive control",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                },
+                {
+                  "id": "explicit_action_interaction_multi_partner_group_aftercare",
+                  "label": "Group Aftercare",
+                  "prompt": "multiple adult partners resting together during visible post-scene aftercare",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "environment",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_environment_private_interiors",
+          "name": "Private Interiors",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "environment",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_environment_private_interiors_01",
+              "label": "Luxury Bedroom",
+              "prompt": "inside a private luxury bedroom with rumpled sheets and ample space around the bodies",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_02",
+              "label": "Modern Hotel Suite",
+              "prompt": "inside a private modern hotel suite with a large bed and floor-to-ceiling windows",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_03",
+              "label": "Minimal Studio",
+              "prompt": "inside a clean private photo studio with a seamless backdrop and uncluttered floor",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_04",
+              "label": "Shower",
+              "prompt": "inside a spacious glass shower with wet tile and drifting steam",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_05",
+              "label": "Living Room",
+              "prompt": "inside a private contemporary living room centered around a broad sofa",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_06",
+              "label": "Dungeon Room",
+              "prompt": "inside a private professional BDSM dungeon with padded equipment and dark walls",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_penthouse",
+              "label": "Private Penthouse",
+              "prompt": "inside a secluded penthouse bedroom with a broad bed and nighttime skyline",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_loft",
+              "label": "Private Loft",
+              "prompt": "inside a private industrial loft with exposed brick and an uncluttered open floor",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_spa",
+              "label": "Private Spa Room",
+              "prompt": "inside a private spa room with a padded table, towels, and warm ambient light",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_dressing_room",
+              "label": "Private Dressing Room",
+              "prompt": "inside a private luxury dressing room with full-length mirrors and a chaise",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_playroom",
+              "label": "Dedicated Playroom",
+              "prompt": "inside a private adult playroom with organized toys, restraints, and padded furniture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_private_interiors_cabin",
+              "label": "Remote Cabin Bedroom",
+              "prompt": "inside a secluded cabin bedroom with timber walls and a large low bed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_environment_outdoor_privacy",
+          "name": "Outdoor Privacy",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "environment",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_environment_outdoor_privacy_01",
+              "label": "Secluded Pool",
+              "prompt": "beside a secluded private pool shielded by tall walls and tropical foliage",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_02",
+              "label": "Remote Beach",
+              "prompt": "on a deserted private beach with no bystanders",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_03",
+              "label": "Forest Clearing",
+              "prompt": "in a secluded forest clearing hidden from public view",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_04",
+              "label": "Private Balcony",
+              "prompt": "on a high private balcony overlooking distant city lights",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_hot_spring",
+              "label": "Private Hot Spring",
+              "prompt": "in a secluded private hot spring surrounded by rocks and steam",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_garden",
+              "label": "Walled Garden",
+              "prompt": "inside a fully enclosed private garden hidden by dense hedges",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_lake_dock",
+              "label": "Remote Lake Dock",
+              "prompt": "on a remote private dock beside a still lake with no bystanders",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_environment_outdoor_privacy_rooftop",
+              "label": "Private Rooftop",
+              "prompt": "on a secured private rooftop screened from neighboring buildings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "weather",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "time_of_day",
+      "name": "Time of Day",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "time_of_day",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [],
+      "fixed_master": true
+    },
+    {
+      "id": "composition",
+      "name": "Composition",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "composition",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_composition_full_body_explicit_framing",
+          "name": "Full Body Explicit Framing",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "composition",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_composition_full_body_explicit_framing_01",
+              "label": "Head to Toe Explicit",
+              "prompt": "head-to-toe full-body composition showing every limb and all relevant explicit anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_02",
+              "label": "Wide Two Person",
+              "prompt": "wide composition containing both adult partners from head to toe without cropped bodies",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_03",
+              "label": "Three Quarter Body Explicit",
+              "prompt": "three-quarter-body composition from head through the knees with explicit action centered",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_04",
+              "label": "Horizontal Full Scene",
+              "prompt": "wide horizontal composition showing the complete bodies, furniture, and surrounding room",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_05",
+              "label": "Vertical Full Body",
+              "prompt": "vertical full-body composition with generous space above the head and below the feet",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_06",
+              "label": "Environmental Explicit",
+              "prompt": "environmental composition keeping the explicit action central while showing substantial surroundings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_two_body_vertical",
+              "label": "Vertical Two-Body Frame",
+              "prompt": "vertical composition fitting both adult partners from head to toe with explicit contact unobstructed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_group_wide",
+              "label": "Wide Group Anatomy",
+              "prompt": "wide composition fitting every adult participant completely with distinct silhouettes and readable contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_bed_full_scene",
+              "label": "Full Bed Composition",
+              "prompt": "wide composition showing the entire bed, complete bodies, and surrounding room",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_floor_full_scene",
+              "label": "Full Floor Composition",
+              "prompt": "slightly elevated wide composition showing complete bodies and their positions across the floor",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_mirror_full_scene",
+              "label": "Full Mirror Composition",
+              "prompt": "full-body composition including both the subjects and complete mirror reflections",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_full_body_explicit_framing_bondage_equipment_full",
+              "label": "Full Equipment Composition",
+              "prompt": "wide composition fitting the restrained body and entire bondage apparatus without cropping",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        },
+        {
+          "id": "explicit_composition_action_centered_framing",
+          "name": "Action Centered Framing",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "composition",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_composition_action_centered_framing_01",
+              "label": "Torso and Pelvis",
+              "prompt": "composition centered from shoulders through thighs so faces and explicit contact remain visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_02",
+              "label": "Pelvis Detail With Context",
+              "prompt": "close detail of explicit contact while retaining enough torso and limbs to establish the position",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_03",
+              "label": "Over Shoulder Partner View",
+              "prompt": "over-the-shoulder composition that shows both the foreground partner and explicit action",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_04",
+              "label": "Side Profile Bodies",
+              "prompt": "side-profile composition showing the alignment and contact of both complete torsos",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_05",
+              "label": "Mirror Composition",
+              "prompt": "composition using a large mirror to show the bodies and explicit action from two angles",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_hands_contact",
+              "label": "Hands and Contact Detail",
+              "prompt": "medium explicit composition keeping faces, hands, pelvises, and physical contact simultaneously visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_oral_context",
+              "label": "Oral Action Context",
+              "prompt": "side-profile composition centered on oral contact while retaining both torsos and supporting limbs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_penetration_context",
+              "label": "Penetration Context",
+              "prompt": "three-quarter composition centered on penetration while retaining hips, torsos, and leg placement",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_toy_context",
+              "label": "Toy Use Context",
+              "prompt": "medium composition showing the adult toy, controlling hands, and relevant anatomy together",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_composition_action_centered_framing_restraint_context",
+              "label": "Restraint Context",
+              "prompt": "composition showing restraint attachment points, complete limb placement, and partner interaction",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "camera_angle",
+      "name": "Camera Angle",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "camera_angle",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_camera_angle_explicit_camera_angles",
+          "name": "Explicit Camera Angles",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "camera_angle",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_01",
+              "label": "Eye Level Full Body",
+              "prompt": "eye-level camera placed far enough back to preserve complete head-to-toe anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_02",
+              "label": "Low Three Quarter",
+              "prompt": "low three-quarter angle emphasizing body position while keeping faces and feet visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_03",
+              "label": "High Three Quarter",
+              "prompt": "high three-quarter angle clearly mapping both bodies and their points of contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_04",
+              "label": "Side On",
+              "prompt": "side-on camera showing body alignment and explicit interaction without obstruction",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_05",
+              "label": "Rear Three Quarter",
+              "prompt": "rear three-quarter angle showing the complete pose and the partner's position",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_06",
+              "label": "Overhead Wide",
+              "prompt": "overhead wide angle showing full bodies, limb placement, and surrounding furniture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_foot_bed",
+              "label": "From Foot of Bed",
+              "prompt": "camera positioned at the foot of the bed to show complete bodies and unobstructed lower-body action",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_bedside",
+              "label": "Bedside Three Quarter",
+              "prompt": "bedside three-quarter viewpoint balancing faces, torsos, and explicit contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_floor_level",
+              "label": "Floor-Level Wide",
+              "prompt": "low floor-level wide angle retaining complete bodies without extreme perspective distortion",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_mirror_angle",
+              "label": "Mirror-Assisted Angle",
+              "prompt": "camera angled to use a mirror for a clear secondary view of explicit contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_camera_angle_explicit_camera_angles_diagonal_overhead",
+              "label": "Diagonal Overhead",
+              "prompt": "diagonal overhead viewpoint mapping every limb and point of contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "lens_photography",
+      "name": "Lens / Photography",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "lens",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_lens_photography_explicit_scene_lenses",
+          "name": "Explicit Scene Lenses",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "lens",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_01",
+              "label": "35mm Environmental",
+              "prompt": "35mm lens perspective with moderate environmental context and minimal distortion",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_02",
+              "label": "50mm Natural",
+              "prompt": "50mm lens perspective with natural proportions and both bodies comfortably framed",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_03",
+              "label": "70mm Intimate",
+              "prompt": "70mm lens perspective compressing the scene slightly while retaining torso-to-thigh context",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_04",
+              "label": "Full Body Depth",
+              "prompt": "moderate depth of field keeping faces, hands, genitals, and body contact simultaneously legible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_05",
+              "label": "Documentary Clarity",
+              "prompt": "documentary-style focus with clear anatomy and no artificial portrait blur",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_28mm_wide",
+              "label": "28mm Wide Interior",
+              "prompt": "28mm lens used from adequate distance to include complete bodies and the private environment",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_40mm_balanced",
+              "label": "40mm Balanced Scene",
+              "prompt": "40mm lens perspective balancing environmental context with natural body proportions",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_85mm_context",
+              "label": "85mm Intimate Context",
+              "prompt": "85mm lens from sufficient distance to retain both bodies and explicit contact without portrait cropping",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_deep_focus",
+              "label": "Deep Focus Scene",
+              "prompt": "deep focus keeping foreground props, all participants, and background context readable",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lens_photography_explicit_scene_lenses_minimal_bokeh",
+              "label": "Minimal Bokeh",
+              "prompt": "restrained background blur preserving the complete scene rather than isolating only faces",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "lighting",
+      "name": "Lighting",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "lighting",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_lighting_erotic_lighting",
+          "name": "Erotic Lighting",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "lighting",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_lighting_erotic_lighting_01",
+              "label": "Soft Window Light",
+              "prompt": "soft directional window light revealing skin contours across the entire body",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_02",
+              "label": "Warm Bedside Light",
+              "prompt": "warm bedside lamps creating gentle highlights while preserving explicit anatomical clarity",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_03",
+              "label": "Red Dungeon Light",
+              "prompt": "deep red practical lighting balanced with neutral fill so bodies and restraints remain readable",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_04",
+              "label": "Neon Bedroom",
+              "prompt": "magenta and blue neon accents with soft frontal fill across both bodies",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_05",
+              "label": "Studio Softbox",
+              "prompt": "large studio softboxes producing even full-body illumination and controlled highlights",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_06",
+              "label": "Candlelit Fill",
+              "prompt": "warm candlelight supplemented by subtle fill to keep faces and explicit action visible",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_soft_ceiling",
+              "label": "Soft Overhead Fill",
+              "prompt": "broad soft overhead light with frontal fill preserving anatomy across the full scene",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_golden_window",
+              "label": "Golden Window Light",
+              "prompt": "warm late-day window light spread across complete bodies and surrounding furniture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_cool_moon",
+              "label": "Cool Moonlight Fill",
+              "prompt": "cool moonlight balanced by subtle warm interior fill for readable skin detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_amber_dungeon",
+              "label": "Amber Dungeon Light",
+              "prompt": "low amber practical lights with controlled fill across restraints and body contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_rim_fill",
+              "label": "Rim and Fill",
+              "prompt": "subtle rim light outlining complete bodies with neutral frontal fill on explicit anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_lighting_erotic_lighting_mirror_vanity",
+              "label": "Vanity Mirror Light",
+              "prompt": "soft vanity bulbs producing even face and body illumination in a mirror scene",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "color_grade",
+      "name": "Color / Grade",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "color",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_color_grade_adult_color_grades",
+          "name": "Adult Color Grades",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "color",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_color_grade_adult_color_grades_01",
+              "label": "Warm Skin Tones",
+              "prompt": "warm cinematic grade preserving natural variation in skin tones",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_color_grade_adult_color_grades_02",
+              "label": "Deep Red Accents",
+              "prompt": "neutral skin tones with deep crimson accents and controlled blacks",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_color_grade_adult_color_grades_03",
+              "label": "Cool Night Contrast",
+              "prompt": "cool nighttime shadows balanced by warm highlights on skin",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_color_grade_adult_color_grades_04",
+              "label": "Clean Editorial",
+              "prompt": "clean high-clarity editorial color with restrained saturation",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_color_grade_adult_color_grades_05",
+              "label": "Moody Film",
+              "prompt": "moody filmic contrast with rich shadows that retain anatomical detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "atmosphere",
+      "name": "Atmosphere",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "atmosphere",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_atmosphere_erotic_mood",
+          "name": "Erotic Mood",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "atmosphere",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_atmosphere_erotic_mood_01",
+              "label": "Tender and Explicit",
+              "prompt": "tender mutual intimacy presented with unmistakably explicit sexual detail",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_02",
+              "label": "Urgent Passion",
+              "prompt": "urgent passionate energy expressed through close body contact and active movement",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_03",
+              "label": "Playful Kink",
+              "prompt": "playful adventurous kink with clear enthusiasm and relaxed body language",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_04",
+              "label": "Intense BDSM",
+              "prompt": "intense consensual power exchange with controlled posture and attentive partner awareness",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_05",
+              "label": "Luxurious Seduction",
+              "prompt": "luxurious seductive atmosphere with polished surroundings and deliberate pacing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_06",
+              "label": "Raw Authenticity",
+              "prompt": "raw candid sexual energy with natural bodies, flushed skin, and imperfect bedding",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_slow_sensual",
+              "label": "Slow Sensuality",
+              "prompt": "slow deliberate sensuality with relaxed bodies and attentive mutual touch",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_confident_exhibition",
+              "label": "Private Exhibitionism",
+              "prompt": "confident private exhibitionism directed toward the camera without public bystanders",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_ritual_bondage",
+              "label": "Ritualized Bondage",
+              "prompt": "carefully staged consensual bondage with deliberate symmetry and ceremonial pacing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_romantic_afterglow",
+              "label": "Romantic Afterglow",
+              "prompt": "soft romantic afterglow with relaxed contact and visible post-climax warmth",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_playful_group",
+              "label": "Playful Group Energy",
+              "prompt": "playful collaborative energy among consenting adult partners with clear engagement",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_atmosphere_erotic_mood_dark_luxury",
+              "label": "Dark Luxury",
+              "prompt": "dark luxurious eroticism balanced by readable skin and polished surroundings",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "style_medium",
+      "name": "Style / Medium",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "style",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_style_medium_explicit_visual_styles",
+          "name": "Explicit Visual Styles",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "style",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_style_medium_explicit_visual_styles_01",
+              "label": "Semi Realistic Illustration",
+              "prompt": "polished semi-realistic illustration with believable anatomy and refined material texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_style_medium_explicit_visual_styles_02",
+              "label": "Cinematic Realism",
+              "prompt": "cinematic realistic rendering with natural skin, coherent anatomy, and restrained processing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_style_medium_explicit_visual_styles_03",
+              "label": "Editorial Erotica",
+              "prompt": "high-end adult editorial photography aesthetic with deliberate composition",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_style_medium_explicit_visual_styles_04",
+              "label": "Graphic Novel",
+              "prompt": "mature graphic-novel illustration with confident linework and dimensional shading",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_style_medium_explicit_visual_styles_05",
+              "label": "Fine Art Erotic",
+              "prompt": "fine-art erotic presentation with sculptural light and anatomically accurate bodies",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "detail_texture",
+      "name": "Detail / Texture",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "detail",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_detail_texture_anatomy_and_contact_detail",
+          "name": "Anatomy and Contact Detail",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "detail",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_01",
+              "label": "Coherent Explicit Anatomy",
+              "prompt": "anatomically coherent adult genitals, hands, limbs, and physical contact",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_02",
+              "label": "Realistic Skin Response",
+              "prompt": "realistic skin compression, flushed areas, subtle perspiration, and natural texture",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_03",
+              "label": "Contact Accuracy",
+              "prompt": "clear physically plausible contact with correct limb placement and no intersecting bodies",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_04",
+              "label": "Fluid Detail",
+              "prompt": "realistic small amounts of bodily fluid appropriate to the explicit action",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_05",
+              "label": "Material Detail",
+              "prompt": "crisp lace, leather, latex, metal, rope, and bedding textures",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_06",
+              "label": "No Cropped Anatomy",
+              "prompt": "complete relevant anatomy remains visible without accidental cropping or obstruction",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_hands_fingers",
+              "label": "Correct Hands and Fingers",
+              "prompt": "anatomically correct hands with five distinct fingers and physically plausible grip",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_pelvic_alignment",
+              "label": "Pelvic Alignment",
+              "prompt": "correct pelvic alignment for the selected position with no intersecting anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_limb_ownership",
+              "label": "Clear Limb Ownership",
+              "prompt": "each limb visibly belongs to one distinct participant with no duplicated or fused anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_body_weight",
+              "label": "Realistic Body Weight",
+              "prompt": "realistic body weight, compression, and support at every contact point",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_genital_scale",
+              "label": "Natural Genital Scale",
+              "prompt": "natural adult genital scale integrated coherently with surrounding anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_restraint_tension",
+              "label": "Realistic Restraint Tension",
+              "prompt": "believable rope and cuff tension without clipping through skin",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_fluid_restraint",
+              "label": "Restrained Fluid Detail",
+              "prompt": "small physically plausible fluid detail without excessive coverage",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_detail_texture_anatomy_and_contact_detail_full_body_priority",
+              "label": "Full-Body Priority",
+              "prompt": "complete pose, action, and participant arrangement prioritized over face-dominant framing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "scene_recipe",
+      "name": "Scene Recipe",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "scene",
+      "claims": [],
+      "behavior": "choose_one",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_scene_count_1",
+          "name": "1 Subject / Solo Scenes",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "scene",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_scene_recipe_complete_solo_scenes",
+              "name": "Complete Solo Scenes",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "scene",
+              "claims": [
+                "identity",
+                "body_physique",
+                "outfit",
+                "accessory",
+                "props",
+                "interaction",
+                "pose",
+                "expression",
+                "environment",
+                "weather",
+                "time_of_day",
+                "composition",
+                "camera_angle",
+                "lens",
+                "lighting"
+              ],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_01",
+                  "label": "Solo Bedroom Toy Scene",
+                  "prompt": "a private full-body bedroom scene of one clearly adult woman reclining with legs spread while using a vibrator, framed head to toe under warm bedside light",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_02",
+                  "label": "Solo Mirror Scene",
+                  "prompt": "a private full-body mirror scene of one clearly adult woman masturbating while her complete body and reflection remain visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_03",
+                  "label": "Solo Bondage Portrait",
+                  "prompt": "a private full-body studio scene of one clearly adult woman consensually restrained spread-eagle, with coherent anatomy and even lighting",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_solo_shower",
+                  "label": "Solo Shower Toy Scene",
+                  "prompt": "a private full-body shower scene of one adult subject standing with one leg raised while using a waterproof vibrator, with complete anatomy visible under soft overhead light",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_solo_mirror",
+                  "label": "Solo Dressing-Room Mirror Scene",
+                  "prompt": "a private full-body dressing-room scene of one adult subject masturbating before a full-length mirror, with the body and reflection completely visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_solo_swing",
+                  "label": "Solo Swing Scene",
+                  "prompt": "a private wide studio scene of one adult subject supported in a sex swing while using an adult toy, with the complete body and equipment visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_solo_scenes_solo_rope",
+                  "label": "Solo Rope Presentation",
+                  "prompt": "a private full-body studio scene of one adult subject posed in decorative rope bondage with explicit anatomy visible and balanced softbox lighting",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_scene_count_2",
+          "name": "2 Subjects / Partner Scenes",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "scene",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_scene_recipe_complete_partner_scenes",
+              "name": "Complete Partner Scenes",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "scene",
+              "claims": [
+                "identity",
+                "body_physique",
+                "outfit",
+                "accessory",
+                "props",
+                "interaction",
+                "pose",
+                "expression",
+                "environment",
+                "weather",
+                "time_of_day",
+                "composition",
+                "camera_angle",
+                "lens",
+                "lighting"
+              ],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_01",
+                  "label": "Bedroom Cowgirl Scene",
+                  "prompt": "a private wide bedroom scene of two clearly adult consenting partners having explicit vaginal sex in a cowgirl position, both bodies fully visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_02",
+                  "label": "Shower Oral Scene",
+                  "prompt": "a private wide shower scene of two clearly adult consenting partners engaged in explicit oral sex, with both bodies and wet surroundings visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_03",
+                  "label": "Dungeon Restraint Scene",
+                  "prompt": "a private wide dungeon scene of two clearly adult consenting partners engaged in restrained BDSM play, showing the complete bodies and equipment",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_04",
+                  "label": "Hotel Anal Scene",
+                  "prompt": "a private wide hotel-room scene of two clearly adult consenting partners having explicit anal sex from behind, with anatomically coherent contact",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_oral_bed",
+                  "label": "Bedside Oral Scene",
+                  "prompt": "a private wide bedroom scene of two adult consenting partners engaged in explicit oral sex at the edge of a bed, with both complete bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_reverse",
+                  "label": "Reverse Cowgirl Scene",
+                  "prompt": "a private full-body bedroom scene of two adult consenting partners having explicit vaginal sex in a reverse cowgirl position, with coherent anatomy",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_spoon",
+                  "label": "Spooning Sex Scene",
+                  "prompt": "a private wide bedroom scene of two adult consenting partners having explicit side-lying sex, with complete bodies and leg placement visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_strapon",
+                  "label": "Strap-On Scene",
+                  "prompt": "a private wide playroom scene of two adult consenting partners engaged in explicit strap-on penetration, with complete bodies and equipment visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_swing",
+                  "label": "Partner Swing Scene",
+                  "prompt": "a private wide playroom scene of two adult consenting partners using a sex swing for explicit intercourse, with the entire apparatus and both bodies visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_partner_bondage",
+                  "label": "Bondage Bench Scene",
+                  "prompt": "a private wide dungeon scene of two adult consenting partners engaged in explicit restrained play on a padded bench, with full equipment context",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "explicit_scene_count_3_plus",
+          "name": "3+ Subjects / Group Scenes",
+          "kind": "group",
+          "state": "off",
+          "chance": 100,
+          "include_filename": false,
+          "role": "scene",
+          "claims": [],
+          "behavior": "choose_one",
+          "choose_count": 1,
+          "locked_child_ids": [],
+          "children": [
+            {
+              "id": "explicit_scene_count_3_plus_complete",
+              "name": "Complete Group Scenes",
+              "kind": "leaf",
+              "state": "off",
+              "chance": 100,
+              "include_filename": true,
+              "role": "scene",
+              "claims": [
+                "identity",
+                "body_physique",
+                "outfit",
+                "accessory",
+                "props",
+                "interaction",
+                "pose",
+                "expression",
+                "environment",
+                "weather",
+                "time_of_day",
+                "composition",
+                "camera_angle",
+                "lens",
+                "lighting"
+              ],
+              "pick_count": 1,
+              "locked_preset_ids": [],
+              "presets": [
+                {
+                  "id": "explicit_scene_recipe_complete_partner_scenes_05",
+                  "label": "Three Adult Scene",
+                  "prompt": "a private wide bedroom scene of three clearly adult consenting partners engaged in explicit group sex, with distinct complete bodies and coherent placement",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_count_3_plus_complete_group_trio_oral",
+                  "label": "Three-Adult Oral Scene",
+                  "prompt": "a private wide bedroom scene of three adult consenting partners engaged in coordinated oral sex, with all complete bodies distinctly visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_count_3_plus_complete_group_trio_center",
+                  "label": "Three-Adult Center Scene",
+                  "prompt": "a private wide bed scene of one adult partner receiving oral and manual stimulation from two adult partners, with coherent body placement",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_count_3_plus_complete_group_four",
+                  "label": "Four-Adult Playroom Scene",
+                  "prompt": "a private wide playroom scene of four adult consenting partners engaged in explicit group sex, with distinct complete bodies and readable contact",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                },
+                {
+                  "id": "explicit_scene_count_3_plus_complete_group_bondage",
+                  "label": "Group Bondage Scene",
+                  "prompt": "a private wide dungeon scene of multiple adult consenting partners participating in structured bondage play, with one restrained body and all equipment visible",
+                  "random_pool": true,
+                  "role": "",
+                  "claims": [
+                    "identity",
+                    "body_physique",
+                    "outfit",
+                    "accessory",
+                    "props",
+                    "interaction",
+                    "pose",
+                    "expression",
+                    "environment",
+                    "weather",
+                    "time_of_day",
+                    "composition",
+                    "camera_angle",
+                    "lens",
+                    "lighting"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    },
+    {
+      "id": "custom_details",
+      "name": "Custom Details",
+      "kind": "group",
+      "state": "off",
+      "chance": 100,
+      "include_filename": false,
+      "role": "other",
+      "claims": [],
+      "behavior": "combine_all",
+      "choose_count": 1,
+      "locked_child_ids": [],
+      "children": [
+        {
+          "id": "explicit_custom_details_safety_and_clarity",
+          "name": "Safety and Clarity",
+          "kind": "leaf",
+          "state": "off",
+          "chance": 100,
+          "include_filename": true,
+          "role": "other",
+          "claims": [],
+          "pick_count": 1,
+          "locked_preset_ids": [],
+          "presets": [
+            {
+              "id": "explicit_custom_details_safety_and_clarity_01",
+              "label": "Clearly Consensual Adults",
+              "prompt": "all participants are clearly age 25 or older and visibly enthusiastic and consenting",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_custom_details_safety_and_clarity_02",
+              "label": "Distinct Bodies",
+              "prompt": "each participant has one distinct coherent body with no duplicated heads or limbs",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_custom_details_safety_and_clarity_03",
+              "label": "Unobstructed Explicit Action",
+              "prompt": "the explicit action remains clearly visible and is not hidden by foreground objects",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_custom_details_safety_and_clarity_04",
+              "label": "Full Scene Priority",
+              "prompt": "prioritize the complete bodies, pose, and environment over face-dominant portrait framing",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            },
+            {
+              "id": "explicit_custom_details_safety_and_clarity_05",
+              "label": "Natural Proportions",
+              "prompt": "maintain natural adult proportions without exaggerated anatomy",
+              "random_pool": true,
+              "role": "",
+              "claims": []
+            }
+          ]
+        }
+      ],
+      "fixed_master": true
+    }
+  ],
+  "reroll_counters": {}
+}
