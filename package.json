@@ -1,0 +1,23 @@
+{
+  "name": "prompt-randomizer-desktop",
+  "version": "0.1.0",
+  "description": "Standalone Standard and Explicit prompt randomizer for Krea 2 and ComfyUI.",
+  "type": "module",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test",
+    "pack:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.cwadsworth.promptrandomizer",
+    "productName": "Prompt Randomizer",
+    "files": ["main.cjs", "preload.cjs", "src/**/*", "package.json"],
+    "win": {"target": "nsis"},
+    "nsis": {"oneClick": false, "allowToChangeInstallationDirectory": true}
+  }
+}
